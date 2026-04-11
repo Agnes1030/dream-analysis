@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		423629AE40D1FD5A5C4DAE77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714BADD95558BC2A36B21131 /* XCTest.framework */; };
+		68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */; };
+		766EC5EAD944AABBEC580AC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B77C47AF22356AC1E4B3BC /* Foundation.framework */; };
+		98EC74780F86C8B806232B6C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B844DBECDC81333A9A63EE8 /* AppTab.swift */; };
+		D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */; };
+		DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F738338E47F72838A53C /* AppEnvironment.swift */; };
+		DE21E58165D7B2D6764D2098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B77C47AF22356AC1E4B3BC /* Foundation.framework */; };
+		F2245877A8022DECF8ED0E9D /* AppRootViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845AECEE338DE5320CDDD3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F8398F4C8C00D7A308DA4E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FE71BCACDD0F8A1FFEFEB493;
+			remoteInfo = DreamAnalysisApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3B844DBECDC81333A9A63EE8 /* AppTab.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTab.swift; path = App/AppTab.swift; sourceTree = "<group>"; };
+		48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DreamAnalysisAppApp.swift; sourceTree = "<group>"; };
+		4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
+		60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootViewModelTests.swift; path = App/AppRootViewModelTests.swift; sourceTree = "<group>"; };
+		714BADD95558BC2A36B21131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = "<group>"; };
+		91B77C47AF22356AC1E4B3BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DreamAnalysisApp.app; path = DreamAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DreamAnalysisAppTests.xctest; path = DreamAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF9F738338E47F72838A53C /* AppEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppEnvironment.swift; path = App/AppEnvironment.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		866939E8918E3F8D470A6DB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE21E58165D7B2D6764D2098 /* Foundation.framework in Frameworks */,
+				423629AE40D1FD5A5C4DAE77 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D84226DF1E2D47C040C54F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				766EC5EAD944AABBEC580AC0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE92F3DF42BD6A04B1BD9BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		37684D68FD59A3DB272735B6 /* DreamAnalysisAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */,
+			);
+			name = DreamAnalysisAppTests;
+			path = DreamAnalysisAppTests;
+			sourceTree = "<group>";
+		};
+		4819EA25B7887F53434AE43B /* DreamAnalysisApp */ = {
+			isa = PBXGroup;
+			children = (
+				48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */,
+				CEF9F738338E47F72838A53C /* AppEnvironment.swift */,
+				3B844DBECDC81333A9A63EE8 /* AppTab.swift */,
+				4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */,
+				0CE92F3DF42BD6A04B1BD9BE /* Resources */,
+			);
+			name = DreamAnalysisApp;
+			path = DreamAnalysisApp;
+			sourceTree = "<group>";
+		};
+		6CDA5790FE6CFFC544A20F06 = {
+			isa = PBXGroup;
+			children = (
+				85B7BE5BF4E1E48F3EF9A5BD /* Products */,
+				8782B50F8B610965CE3CCF73 /* Frameworks */,
+				4819EA25B7887F53434AE43B /* DreamAnalysisApp */,
+				37684D68FD59A3DB272735B6 /* DreamAnalysisAppTests */,
+			);
+			sourceTree = "<group>";
+		};
+		85B7BE5BF4E1E48F3EF9A5BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */,
+				CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8782B50F8B610965CE3CCF73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7873C8711CD1589BFEE632C /* iOS */,
+				714BADD95558BC2A36B21131 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7873C8711CD1589BFEE632C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				91B77C47AF22356AC1E4B3BC /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA42D4314F13BBA661B3E2DA /* DreamAnalysisAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F20F30BFFF3A00727499D0E /* Build configuration list for PBXNativeTarget "DreamAnalysisAppTests" */;
+			buildPhases = (
+				8F0A3004869AF9B0F1F16108 /* Sources */,
+				866939E8918E3F8D470A6DB0 /* Frameworks */,
+				188EFD532FA605C0278CC1E9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7A0F4A4A3B32F0D1CBDCF8F9 /* PBXTargetDependency */,
+			);
+			name = DreamAnalysisAppTests;
+			productName = DreamAnalysisAppTests;
+			productReference = CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FE71BCACDD0F8A1FFEFEB493 /* DreamAnalysisApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8CA4A266512A0E3875E7BFF /* Build configuration list for PBXNativeTarget "DreamAnalysisApp" */;
+			buildPhases = (
+				EC2D8320BF963CD3A025EB83 /* Sources */,
+				D84226DF1E2D47C040C54F79 /* Frameworks */,
+				723BCA52A7E92B482AE8B408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DreamAnalysisApp;
+			productName = DreamAnalysisApp;
+			productReference = AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F8398F4C8C00D7A308DA4E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 6F0CFE962B899A5495D1A795 /* Build configuration list for PBXProject "DreamAnalysisApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CDA5790FE6CFFC544A20F06;
+			productRefGroup = 85B7BE5BF4E1E48F3EF9A5BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE71BCACDD0F8A1FFEFEB493 /* DreamAnalysisApp */,
+				FA42D4314F13BBA661B3E2DA /* DreamAnalysisAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		188EFD532FA605C0278CC1E9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		723BCA52A7E92B482AE8B408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F0A3004869AF9B0F1F16108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2245877A8022DECF8ED0E9D /* AppRootViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2D8320BF963CD3A025EB83 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */,
+				DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */,
+				98EC74780F86C8B806232B6C /* AppTab.swift in Sources */,
+				68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7A0F4A4A3B32F0D1CBDCF8F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DreamAnalysisApp;
+			target = FE71BCACDD0F8A1FFEFEB493 /* DreamAnalysisApp */;
+			targetProxy = 845AECEE338DE5320CDDD3DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36C7CBC8BCC5AE9E705816DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		58E3B6C1F07B7185B116FAE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5D5EB12C0693C87C2A97BC0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agnesma.DreamAnalysisApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		90894FE2B8317C177B630A8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agnesma.DreamAnalysisApp;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C19C7A2313073F88292C1A30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agnesma.DreamAnalysisAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamAnalysisApp.app/DreamAnalysisApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B74E88B7AFBBEC42A625B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.agnesma.DreamAnalysisAppTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DreamAnalysisApp.app/DreamAnalysisApp";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F20F30BFFF3A00727499D0E /* Build configuration list for PBXNativeTarget "DreamAnalysisAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19C7A2313073F88292C1A30 /* Release */,
+				F4B74E88B7AFBBEC42A625B5 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0CFE962B899A5495D1A795 /* Build configuration list for PBXProject "DreamAnalysisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58E3B6C1F07B7185B116FAE0 /* Debug */,
+				36C7CBC8BCC5AE9E705816DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8CA4A266512A0E3875E7BFF /* Build configuration list for PBXNativeTarget "DreamAnalysisApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D5EB12C0693C87C2A97BC0C /* Release */,
+				90894FE2B8317C177B630A8D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4F8398F4C8C00D7A308DA4E4 /* Project object */;
+}
