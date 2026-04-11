@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#11131c",
+                        "surface-container-high": "#282933",
+                        "on-error": "#690005",
+                        "background": "#11131c",
+                        "on-tertiary": "#2f3132",
+                        "surface-container-lowest": "#0c0e17",
+                        "error": "#ffb4ab",
+                        "inverse-surface": "#e1e1ef",
+                        "primary-fixed": "#e8ddff",
+                        "on-surface-variant": "#c6c6cc",
+                        "surface-container-highest": "#32343e",
+                        "on-primary-fixed-variant": "#4b4169",
+                        "on-error-container": "#ffdad6",
+                        "outline": "#909096",
+                        "on-secondary-container": "#a4b7cd",
+                        "on-primary-container": "#877ba7",
+                        "on-secondary-fixed": "#091d2e",
+                        "surface-bright": "#373943",
+                        "primary": "#cdbff0",
+                        "secondary": "#b5c8df",
+                        "primary-container": "#1b1137",
+                        "on-primary-fixed": "#1f153b",
+                        "surface-variant": "#32343e",
+                        "surface-tint": "#cdbff0",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "error-container": "#93000a",
+                        "primary-fixed-dim": "#cdbff0",
+                        "outline-variant": "#45464c",
+                        "inverse-on-surface": "#2e303a",
+                        "tertiary-container": "#16181a",
+                        "surface-container": "#1d1f29",
+                        "surface": "#11131c",
+                        "on-tertiary-container": "#808183",
+                        "tertiary": "#c6c6c8",
+                        "inverse-primary": "#635882",
+                        "on-surface": "#e1e1ef",
+                        "on-primary": "#342a51",
+                        "tertiary-fixed-dim": "#c6c6c8",
+                        "secondary-container": "#36485b",
+                        "on-background": "#e1e1ef",
+                        "tertiary-fixed": "#e2e2e4",
+                        "on-secondary": "#203243",
+                        "surface-container-low": "#191b24",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "on-secondary-fixed-variant": "#36485b",
+                        "secondary-fixed": "#d1e4fb",
+                        "secondary-fixed-dim": "#b5c8df"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #11131c;
+            color: #e1e1ef;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .serif-font {
+            font-family: 'Noto Serif', serif;
+        }
+        .nebula-glow {
+            background: radial-gradient(circle at 50% 50%, #1b1137 0%, #11131c 70%);
+        }
+        .glass-card {
+            backdrop-filter: blur(25px);
+            background: rgba(40, 41, 51, 0.4);
+        }
+        .orb-gradient {
+            background: radial-gradient(circle, #cdbff0 0%, #1b1137 100%);
+            box-shadow: 0 0 30px rgba(205, 191, 240, 0.2);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen nebula-glow pb-32">
+<!-- Top Navigation Shell -->
+<header class="fixed top-0 w-full flex items-center justify-between px-6 h-16 bg-[#11131c]/70 backdrop-blur-2xl z-50">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#cdbff0] hover:opacity-80 transition-opacity cursor-pointer">menu</span>
+</div>
+<h1 class="text-xl font-serif text-[#cdbff0] tracking-widest">灵境回响</h1>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-[#45464c]/20">
+<img alt="User" data-alt="close-up artistic portrait of a calm person with ethereal lighting and soft bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBLqp6CC-bsSLDz4fO_KfWP6ytHlNmscEVdrrOVxPGGTCqjaWYfzl5ghAv_6Yj0dTV2o94iT3PfDmtWDyw5_bsE4Db2y-iWmN1vtJBEWFVBeT-9hHxA-ZbIOyX7oe3dJr51D-Sz1cOS3N68Z6p7IIzkOYcoWm3jLYfDckuMHuSzcuBkiymNzkt8TWdyfVxpChOcAYaGixoPnkSAmUk1hXbcAhZxyZ7cmj303nnELPfoUEfgVhpLkKYN_MoqfXTO0dOHpj16qX5nUWXX"/>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-4xl mx-auto space-y-12">
+<!-- Header Hero Section -->
+<section class="space-y-2">
+<h2 class="serif-font text-4xl font-medium text-primary tracking-tight">意识模式</h2>
+<p class="text-secondary opacity-70 font-light tracking-wide">基于过去 180 天的潜意识轨迹分析</p>
+</section>
+<!-- Spirit Trajectory (灵性轨迹) - Asymmetric Layout -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 glass-card rounded-xl p-8 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-20">
+<span class="material-symbols-outlined text-6xl">insights</span>
+</div>
+<h3 class="serif-font text-xl mb-6 text-on-surface">灵性轨迹</h3>
+<!-- Abstract Wave Chart SVG -->
+<div class="h-48 w-full flex items-end justify-between gap-1">
+<svg class="w-full h-full stroke-primary/40 fill-none" viewbox="0 0 400 100">
+<path class="transition-all duration-1000" d="M0,50 Q50,10 100,60 T200,40 T300,80 T400,20" stroke-width="1.5"></path>
+<path class="opacity-30" d="M0,70 Q60,30 120,80 T240,50 T360,90 T480,30" stroke-dasharray="4 4" stroke-width="1"></path>
+<!-- Decorative Orbs on chart -->
+<circle cx="100" cy="60" fill="#cdbff0" r="4"></circle>
+<circle cx="300" cy="80" fill="#b5c8df" r="4"></circle>
+</svg>
+</div>
+<div class="mt-6 flex justify-between text-[11px] text-secondary/50 font-light uppercase tracking-tighter">
+<span>一月</span>
+<span>三月</span>
+<span>五月</span>
+<span>现在</span>
+</div>
+</div>
+<!-- Pattern Highlight Card -->
+<div class="md:col-span-4 bg-surface-container-low rounded-xl p-6 flex flex-col justify-between">
+<p class="text-on-surface-variant leading-relaxed font-light italic">
+                    “你的梦境在满月期间呈现出更高频率的‘飞翔’意象，暗示着一种深刻的自由渴望。”
+                </p>
+<div class="pt-4">
+<div class="w-12 h-12 rounded-full orb-gradient mb-2"></div>
+<span class="text-xs text-primary font-medium">洞察焦点</span>
+</div>
+</div>
+</section>
+<!-- Recurring Imagery (循环意象) - Horizontal Scroll/Grid -->
+<section class="space-y-6">
+<div class="flex items-center justify-between">
+<h3 class="serif-font text-xl text-on-surface">循环意象</h3>
+<span class="text-xs text-secondary/40">按出现频率排序</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+<!-- Item: Water -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">waves</span>
+<h4 class="font-medium text-lg text-on-surface mb-1">流水</h4>
+<p class="text-xs text-secondary/60 mb-4 tracking-wide">代表：情感的流动与净化</p>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-light text-primary">42</span>
+<span class="text-[10px] text-secondary/40">次记录</span>
+</div>
+</div>
+<!-- Item: Flight -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">air</span>
+<h4 class="font-medium text-lg text-on-surface mb-1">飞行</h4>
+<p class="text-xs text-secondary/60 mb-4 tracking-wide">代表：精神层面的超越</p>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-light text-primary">28</span>
+<span class="text-[10px] text-secondary/40">次记录</span>
+</div>
+</div>
+<!-- Item: Forest -->
+<div class="bg-surface-container-lowest p-6 rounded-xl border border-outline-variant/10 group hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary mb-4 text-3xl">park</span>
+<h4 class="font-medium text-lg text-on-surface mb-1">森林</h4>
+<p class="text-xs text-secondary/60 mb-4 tracking-wide">代表：潜意识的深处探索</p>
+<div class="flex items-baseline gap-2">
+<span class="text-3xl font-light text-primary">15</span>
+<span class="text-[10px] text-secondary/40">次记录</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Dream Companions (梦中旅伴) - Circle Avatars -->
+<section class="space-y-6">
+<h3 class="serif-font text-xl text-on-surface">梦中旅伴</h3>
+<div class="flex flex-wrap gap-8 items-center justify-center py-4">
+<div class="flex flex-col items-center gap-3">
+<div class="w-16 h-16 rounded-full ring-2 ring-primary/20 ring-offset-4 ring-offset-surface overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
+<img alt="Avatar" data-alt="abstract artistic sketch of a mystical figure with a glowing aura" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwvRKjmFgBD-YHZp106yFWn-xj8ElrdCJWPkEWDYJnn7eLK86gC4McLlUgNhSe0Z39ditZ5heSZ5qHU3zAZSC4wBU_rdvIecL9wXJ_NaurZYIYm2W3YaJ-mrstez4PkJ7-IUKa4O0-PQTnnLZ5alW4jMHYUlUkWGQ2Oa9pIqtedOXfotJrqnqKDxt9FA4xHpDfbWezOJg6WTDllcljYyb8_zL5vxqISP5K0tUHOFMSyBjDePQf5RSVqSnCyFVjG3CKJef5KLAa-j1E"/>
+</div>
+<div class="text-center">
+<p class="text-sm font-medium text-on-surface">提灯者</p>
+<p class="text-[10px] text-secondary/50">指引与启迪</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-16 h-16 rounded-full ring-2 ring-primary/20 ring-offset-4 ring-offset-surface overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
+<img alt="Avatar" data-alt="minimalist digital art of a blurred human silhouette standing in a field of stars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXuzBUmDvI1yPohHpTKzHgmwodozRWpsE8HapyN6p2vnAyNaZ7wnjdcVTMpwMA5ysvAbIoaaBEKgAhgfszEYVSLMLPqDmcTk3K_wc-ctVGNTm7iyMz_SvNd5__flGNrKuB_XzchTohw6lLEkX5olUctglamHgF-qYURei3gLV_6G2LZieR37AaTSRV28nCM4tHyG-0KSIZaDqF5BqG6_rdaaQANz-FmxFP74rA8diBCYO5RtI9iVYXsWYyjtxqm-Jm6mOsj_0JjPvx"/>
+</div>
+<div class="text-center">
+<p class="text-sm font-medium text-on-surface">无名旅人</p>
+<p class="text-[10px] text-secondary/50">镜像自我</p>
+</div>
+</div>
+<div class="flex flex-col items-center gap-3">
+<div class="w-16 h-16 rounded-full ring-2 ring-primary/20 ring-offset-4 ring-offset-surface overflow-hidden grayscale hover:grayscale-0 transition-all cursor-pointer">
+<img alt="Avatar" data-alt="creative portrait of a wise old figure with glowing eyes and long white beard in soft focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvrKBIrJV4GwSEoLmoiUAMZmyL6_fl9b8oiMDRcVQbz1L9QtpNea8p6RPtbHXEDov0l4GMg94axziEWsBkrU0rnwBXGLA6vJ-Ckaa-v6SDLk7JpKqcMyMrcxUMelLF2ytRzDw595aM9MEJfC5JyA72bBZxKtD6dRh_FS7INJ5y1nvBSvsXB26kjBVSWSEazBE6hqkg7uzYxSc-ybaDwZjzuvIgcE_Y9t1fCjezMddfsrVLHz_UUSFhDCMvYpVe4Vs-TvHw1D6yL-gE"/>
+</div>
+<div class="text-center">
+<p class="text-sm font-medium text-on-surface">老智者</p>
+<p class="text-[10px] text-secondary/50">集体无意识</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Emotional Palette (情绪底色) - Gradient Bars -->
+<section class="glass-card rounded-2xl p-8 space-y-8">
+<h3 class="serif-font text-xl text-on-surface">情绪底色</h3>
+<div class="space-y-6">
+<!-- Peace -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs tracking-widest font-light">
+<span class="text-primary uppercase">安宁</span>
+<span class="text-on-surface">65%</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary w-[65%]"></div>
+</div>
+</div>
+<!-- Anxiety -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs tracking-widest font-light">
+<span class="text-secondary/60 uppercase">焦虑</span>
+<span class="text-on-surface">15%</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-secondary/30 w-[15%]"></div>
+</div>
+</div>
+<!-- Hope -->
+<div class="space-y-2">
+<div class="flex justify-between text-xs tracking-widest font-light">
+<span class="text-primary/60 uppercase">希望</span>
+<span class="text-on-surface">20%</span>
+</div>
+<div class="h-[2px] w-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary/40 w-[20%]"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Privacy Management -->
+<footer class="pt-12 pb-8 border-t border-outline-variant/10">
+<div class="flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div>
+<h4 class="text-sm font-medium text-on-surface">生物特征数据加密</h4>
+<p class="text-xs text-secondary/40 font-light">分析结果仅存储于本地设备</p>
+</div>
+<button class="w-10 h-5 rounded-full bg-primary relative p-1 transition-colors">
+<span class="absolute right-1 top-1 w-3 h-3 bg-on-primary rounded-full"></span>
+</button>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<h4 class="text-sm font-medium text-on-surface">隐身模式</h4>
+<p class="text-xs text-secondary/40 font-light">停止长期轨迹追踪</p>
+</div>
+<button class="w-10 h-5 rounded-full bg-surface-container-highest relative p-1 transition-colors">
+<span class="absolute left-1 top-1 w-3 h-3 bg-outline rounded-full"></span>
+</button>
+</div>
+</div>
+</footer>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#11131c]/70 backdrop-blur-3xl shadow-[0_-10px_40px_rgba(27,17,55,0.3)] rounded-t-[2rem]">
+<div class="flex flex-col items-center justify-center text-[#b5c8df]/60 hover:text-[#cdbff0] transition-colors cursor-pointer">
+<span class="material-symbols-outlined mb-1">edit_note</span>
+<span class="font-sans text-[11px] font-light tracking-tighter">记录</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#b5c8df]/60 hover:text-[#cdbff0] transition-colors cursor-pointer">
+<span class="material-symbols-outlined mb-1">auto_awesome</span>
+<span class="font-sans text-[11px] font-light tracking-tighter">分析</span>
+</div>
+<!-- Active Tab: 模式 (Patterns/Profile) -->
+<div class="flex flex-col items-center justify-center text-[#cdbff0] bg-[#282933]/50 rounded-full px-4 py-1 tap-highlight-none">
+<span class="material-symbols-outlined mb-1" style="font-variation-settings: 'FILL' 1;">insights</span>
+<span class="font-sans text-[11px] font-light tracking-tighter">模式</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#b5c8df]/60 hover:text-[#cdbff0] transition-colors cursor-pointer">
+<span class="material-symbols-outlined mb-1">bedtime</span>
+<span class="font-sans text-[11px] font-light tracking-tighter">避风港</span>
+</div>
+</nav>
+</body></html>

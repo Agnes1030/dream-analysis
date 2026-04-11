@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>灵境回响 - 录音页</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&amp;family=Manrope:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-dim": "#11131c",
+                    "surface-container-high": "#282933",
+                    "on-error": "#690005",
+                    "background": "#11131c",
+                    "on-tertiary": "#2f3132",
+                    "surface-container-lowest": "#0c0e17",
+                    "error": "#ffb4ab",
+                    "inverse-surface": "#e1e1ef",
+                    "primary-fixed": "#e8ddff",
+                    "on-surface-variant": "#c6c6cc",
+                    "surface-container-highest": "#32343e",
+                    "on-primary-fixed-variant": "#4b4169",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#909096",
+                    "on-secondary-container": "#a4b7cd",
+                    "on-primary-container": "#877ba7",
+                    "on-secondary-fixed": "#091d2e",
+                    "surface-bright": "#373943",
+                    "primary": "#cdbff0",
+                    "secondary": "#b5c8df",
+                    "primary-container": "#1b1137",
+                    "on-primary-fixed": "#1f153b",
+                    "surface-variant": "#32343e",
+                    "surface-tint": "#cdbff0",
+                    "on-tertiary-fixed-variant": "#454749",
+                    "error-container": "#93000a",
+                    "primary-fixed-dim": "#cdbff0",
+                    "outline-variant": "#45464c",
+                    "inverse-on-surface": "#2e303a",
+                    "tertiary-container": "#16181a",
+                    "surface-container": "#1d1f29",
+                    "surface": "#11131c",
+                    "on-tertiary-container": "#808183",
+                    "tertiary": "#c6c6c8",
+                    "inverse-primary": "#635882",
+                    "on-surface": "#e1e1ef",
+                    "on-primary": "#342a51",
+                    "tertiary-fixed-dim": "#c6c6c8",
+                    "secondary-container": "#36485b",
+                    "on-background": "#e1e1ef",
+                    "tertiary-fixed": "#e2e2e4",
+                    "on-secondary": "#203243",
+                    "surface-container-low": "#191b24",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "on-secondary-fixed-variant": "#36485b",
+                    "secondary-fixed": "#d1e4fb",
+                    "secondary-fixed-dim": "#b5c8df"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif SC", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .dream-orb-glow {
+            box-shadow: 0 0 80px 20px rgba(205, 191, 240, 0.15);
+        }
+        .floating-mesh {
+            background: radial-gradient(circle at 50% 50%, rgba(27, 17, 55, 0.8) 0%, rgba(17, 19, 28, 1) 100%);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface font-body min-h-screen flex flex-col overflow-hidden">
+<!-- Top Navigation (Derived from Shared Components) -->
+<header class="fixed top-0 w-full flex items-center justify-between px-6 h-16 bg-[#11131c]/70 backdrop-blur-2xl z-50">
+<button class="text-[#cdbff0] hover:opacity-80 transition-opacity">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="text-xl font-serif text-[#cdbff0] tracking-widest">灵境回响</h1>
+<div class="w-10 h-10 rounded-full border border-outline-variant/20 overflow-hidden">
+<img alt="用户头像" data-alt="a minimalist and artistic avatar of a person with a serene expression, soft atmospheric lighting, purple and midnight blue tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADyyLGKxbP6Ek1KRzaloLhGUFM4XObBzfAxto8keB5uPgLOJZa4TbEA-ODQjYdBMZdOSLXhXiJlVDPofR-fkoC6Tp0dIWGZ-HRvYlpj6J-s0Henm0OnyhzThKaFIb1fp4RsEgQLOe-5Dfkf0tOHV1wJsu_N8oFhahq3bg3_kIqOtXt_Iq5HDomRgAKPkgSqfLO5aEC7ZMhiVo75HK7iq1ToI7Nx98F-FFAUw3WYHx2lbd5XcdCMpcxuRLoPoNds3au8ZVGcVrfWL11"/>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 flex flex-col items-center justify-center relative px-8 pt-20 pb-32 floating-mesh">
+<!-- Header Text -->
+<div class="text-center mb-16 z-10">
+<h2 class="font-headline text-3xl text-on-surface tracking-wide mb-3 opacity-90">我在倾听...</h2>
+<p class="font-body text-secondary text-sm tracking-widest font-light opacity-60">向黑夜倾诉你的秘密</p>
+</div>
+<!-- The Dream Orb (Signature Component) -->
+<div class="relative flex items-center justify-center w-full max-w-sm aspect-square mb-12">
+<!-- Pulsing Rings -->
+<div class="absolute w-64 h-64 rounded-full border border-primary/10 scale-125 opacity-20"></div>
+<div class="absolute w-80 h-80 rounded-full border border-primary/5 scale-150 opacity-10"></div>
+<!-- Central Orb -->
+<div class="w-48 h-48 rounded-full bg-gradient-to-br from-primary to-primary-container dream-orb-glow flex items-center justify-center z-10 transition-transform duration-1000">
+<div class="w-40 h-40 rounded-full bg-[#11131c]/40 backdrop-blur-md flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-5xl" style="font-variation-settings: 'FILL' 1;">graphic_eq</span>
+</div>
+</div>
+</div>
+<!-- Real-time Transcription -->
+<div class="w-full max-w-md text-center z-10 h-24 flex flex-col items-center justify-start">
+<p class="text-on-surface/80 text-lg leading-relaxed font-light transition-all duration-700">
+                梦里我站在一片紫色的海滩上...
+            </p>
+<p class="text-on-surface/40 text-base leading-relaxed font-light mt-2 animate-pulse">
+                风很凉，但我并不觉得冷。
+            </p>
+</div>
+<!-- Timer -->
+<div class="mt-8 flex items-center gap-2 text-secondary/40 font-mono tracking-widest text-sm z-10">
+<span class="w-2 h-2 rounded-full bg-error/60"></span>
+<span>02:44</span>
+</div>
+</main>
+<!-- Bottom Actions -->
+<div class="fixed bottom-0 w-full px-8 pb-12 pt-6 flex flex-col items-center gap-6 z-50">
+<!-- Primary Action -->
+<button class="w-full max-w-xs h-16 rounded-full bg-gradient-to-r from-primary to-primary-fixed-dim text-on-primary-fixed font-semibold text-lg tracking-widest shadow-xl flex items-center justify-center gap-2 hover:scale-[0.98] transition-transform">
+<span>结束讲述</span>
+</button>
+<!-- Secondary Action -->
+<button class="text-secondary/60 text-sm tracking-widest hover:text-secondary transition-colors font-light">
+            稍作停留
+        </button>
+</div>
+<!-- Hidden Nav Shell (Suppressed due to Task-Focused Intent) -->
+<!-- The BottomNavBar is suppressed here as per the "Destination Rule" for task-focused journey -->
+</body></html>

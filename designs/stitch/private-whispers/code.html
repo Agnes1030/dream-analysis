@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="zh-CN"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&amp;family=Noto+Serif+SC:wght@300;600;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e2e2e4",
+                    "on-tertiary-container": "#808183",
+                    "tertiary-container": "#16181a",
+                    "tertiary": "#c6c6c8",
+                    "background": "#11131c",
+                    "on-surface-variant": "#c6c6cc",
+                    "surface-container-high": "#282933",
+                    "on-secondary-fixed": "#091d2e",
+                    "on-error": "#690005",
+                    "surface-dim": "#11131c",
+                    "surface-container": "#1d1f29",
+                    "on-tertiary-fixed-variant": "#454749",
+                    "inverse-surface": "#e1e1ef",
+                    "primary-fixed": "#e8ddff",
+                    "surface-container-low": "#191b24",
+                    "error-container": "#93000a",
+                    "surface-variant": "#32343e",
+                    "outline": "#909096",
+                    "on-background": "#e1e1ef",
+                    "surface-container-lowest": "#0c0e17",
+                    "surface": "#11131c",
+                    "on-primary-fixed": "#1f153b",
+                    "inverse-primary": "#635882",
+                    "error": "#ffb4ab",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "surface-container-highest": "#32343e",
+                    "primary-container": "#1b1137",
+                    "primary": "#cdbff0",
+                    "on-primary-fixed-variant": "#4b4169",
+                    "on-primary-container": "#877ba7",
+                    "surface-tint": "#cdbff0",
+                    "on-secondary": "#203243",
+                    "inverse-on-surface": "#2e303a",
+                    "surface-bright": "#373943",
+                    "secondary-fixed-dim": "#b5c8df",
+                    "secondary-fixed": "#d1e4fb",
+                    "primary-fixed-dim": "#cdbff0",
+                    "on-primary": "#342a51",
+                    "tertiary-fixed-dim": "#c6c6c8",
+                    "on-secondary-fixed-variant": "#36485b",
+                    "secondary-container": "#36485b",
+                    "on-surface": "#e1e1ef",
+                    "on-error-container": "#ffdad6",
+                    "outline-variant": "#45464c",
+                    "on-secondary-container": "#a4b7cd",
+                    "secondary": "#b5c8df",
+                    "on-tertiary": "#2f3132"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif SC", "serif"],
+                    "body": ["Manrope", "sans-serif"],
+                    "label": ["Manrope", "sans-serif"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .ethereal-glow {
+            background: radial-gradient(circle at 50% 40%, rgba(27, 17, 55, 0.4) 0%, rgba(17, 19, 28, 1) 70%);
+        }
+        .dream-orb {
+            box-shadow: 0 0 30px rgba(205, 191, 240, 0.3);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-primary">
+<!-- Subtle Background Atmosphere -->
+<div class="fixed inset-0 ethereal-glow pointer-events-none z-0"></div>
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 bg-[#11131c]/70 backdrop-blur-3xl shadow-[0_0_40px_rgba(27,17,55,0.06)]">
+<div class="flex items-center justify-between px-6 h-16 w-full max-w-screen-xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="text-[#cdbff0] hover:opacity-80 transition-opacity duration-500">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-headline italic tracking-wide text-[#cdbff0]">私人密语</h1>
+</div>
+<div class="flex items-center gap-2 text-[#cdbff0]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">enhanced_encryption</span>
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+</div>
+</header>
+<main class="relative z-10 pt-24 pb-32 px-6 max-w-2xl mx-auto min-h-screen">
+<!-- Hero Section / Context -->
+<section class="mb-12 text-center">
+<div class="inline-block p-1 mb-4 rounded-full bg-gradient-to-b from-primary/20 to-transparent">
+<div class="w-16 h-16 rounded-full flex items-center justify-center bg-surface-container-low backdrop-blur-xl">
+<span class="material-symbols-outlined text-primary scale-125">lock_person</span>
+</div>
+</div>
+<h2 class="text-3xl font-headline font-light mb-2 text-on-surface">心灵的避风港</h2>
+<p class="text-secondary/60 text-sm tracking-widest font-label uppercase">Your Private Sanctuary</p>
+</section>
+<!-- Timeline Entries -->
+<div class="space-y-10 relative">
+<!-- Decorative Timeline Line -->
+<div class="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-outline-variant/20 to-transparent ml-[1.125rem]"></div>
+<!-- Entry 1 -->
+<div class="relative pl-10 group">
+<div class="absolute left-4 top-2 w-1.5 h-1.5 rounded-full bg-primary dream-orb"></div>
+<div class="bg-surface-container-low/40 backdrop-blur-md rounded-xl p-6 border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-label text-secondary/50 tracking-widest uppercase">10月24日 凌晨</span>
+<span class="material-symbols-outlined text-primary/40 text-sm">filter_vintage</span>
+</div>
+<p class="text-on-surface/90 leading-relaxed font-light italic">
+                        今晚的梦境像是一场无声的电影。我站在那片蓝色的森林里，听着远方的回响。那些未曾言说的思绪，似乎在月光下找到了出口。
+                    </p>
+</div>
+</div>
+<!-- Entry 2 -->
+<div class="relative pl-10 group">
+<div class="absolute left-4 top-2 w-1.5 h-1.5 rounded-full bg-secondary/30"></div>
+<div class="bg-surface-container-low/40 backdrop-blur-md rounded-xl p-6 border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-label text-secondary/50 tracking-widest uppercase">10月22日 深夜</span>
+<span class="material-symbols-outlined text-secondary/30 text-sm">waves</span>
+</div>
+<p class="text-on-surface/80 leading-relaxed font-light">
+                        感觉有些疲惫，但内心依然平静。生命中的每一个起伏都有它的意义。像是一颗坠入湖底的石子，涟漪终会散去，留下的是湖底深处的安宁。
+                    </p>
+</div>
+</div>
+<!-- Image/Mood Card (Asymmetric Layout) -->
+<div class="ml-10 py-4 grid grid-cols-5 gap-4">
+<div class="col-span-3 h-48 rounded-xl overflow-hidden shadow-2xl">
+<img class="w-full h-full object-cover opacity-60 grayscale hover:grayscale-0 transition-all duration-1000" data-alt="abstract cosmic scene with deep violet and blue nebula clouds swirling gently with distant pinpricks of stars" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUT2RuwNhtDJIKk273SmtclRrOmggnxwBIKv9WAKGuGw85hQ-9by7qcyliUgUiTpsRAVkYtqVNtCwjUuknlH1drOZ0ahsblP1uecDgMaEMWW9MY2pnLmJpJHddRsvVw_8e4RNo9zJf8aN8fKmMtRAzbVAx34knSEmHYJXcxxGx4kbtjIffQo69xdOa_oqBekyUZ8F2nMKhtMFkoeja7eSReqyofafI1pI6wty20txJTQCQjkxcGfk-HZPs4IhExRpK7Y_Baqas6JEp"/>
+</div>
+<div class="col-span-2 flex flex-col justify-end">
+<div class="p-4 bg-primary-container/10 border-l-2 border-primary/30 rounded-r-xl">
+<p class="text-[10px] text-primary/60 font-label tracking-tighter italic">"灵魂需要的是安静地绽放。"</p>
+</div>
+</div>
+</div>
+<!-- Entry 3 -->
+<div class="relative pl-10 group">
+<div class="absolute left-4 top-2 w-1.5 h-1.5 rounded-full bg-secondary/30"></div>
+<div class="bg-surface-container-low/40 backdrop-blur-md rounded-xl p-6 border border-outline-variant/10 hover:border-primary/20 transition-all duration-500">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-label text-secondary/50 tracking-widest uppercase">10月18日 黄昏</span>
+<span class="material-symbols-outlined text-secondary/30 text-sm">ac_unit</span>
+</div>
+<p class="text-on-surface/80 leading-relaxed font-light">
+                        初雪。世界突然变得好安静。
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<!-- Signature Component: The Dream Orb FAB -->
+<div class="fixed bottom-28 right-8 z-[60]">
+<button class="w-16 h-16 rounded-full bg-gradient-to-tr from-primary to-primary-fixed-dim flex items-center justify-center dream-orb group transition-transform duration-500 hover:scale-110 active:scale-95">
+<span class="material-symbols-outlined text-on-primary-fixed text-3xl group-hover:rotate-12 transition-transform">edit_note</span>
+<!-- Decorative Ripples (Simulated with circles) -->
+<div class="absolute inset-0 rounded-full border border-primary/20 animate-ping opacity-20"></div>
+</button>
+</div>
+<!-- Bottom Navigation Bar (The Anchor) -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center h-20 px-8 pb-4 bg-[#11131c]/70 backdrop-blur-3xl shadow-2xl z-50 rounded-t-[1.5rem] tonal-shift bg-[#191b24]">
+<a class="flex flex-col items-center justify-center text-[#b5c8df]/40 hover:text-[#cdbff0]/80 transition-all" href="#">
+<span class="material-symbols-outlined">nightlight</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#b5c8df]/40 hover:text-[#cdbff0]/80 transition-all" href="#">
+<span class="material-symbols-outlined">flare</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#cdbff0] scale-110" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#b5c8df]/40 hover:text-[#cdbff0]/80 transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+</a>
+</nav>
+</body></html>
