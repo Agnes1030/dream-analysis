@@ -15,6 +15,12 @@
 		7A6A10000000000000000003 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000003 /* ArchiveView.swift */; };
 		7A6A10000000000000000004 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000004 /* ProfileView.swift */; };
 		7A6A10000000000000000005 /* AppTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000005 /* AppTabTests.swift */; };
+		7A6A10000000000000000006 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000006 /* HomeViewModel.swift */; };
+		7A6A10000000000000000007 /* AtmosphericHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000007 /* AtmosphericHeaderView.swift */; };
+		7A6A10000000000000000008 /* PrimaryCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000008 /* PrimaryCaptureButton.swift */; };
+		7A6A10000000000000000009 /* RecentDreamCallbackCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000009 /* RecentDreamCallbackCard.swift */; };
+		7A6A1000000000000000000A /* RecurringCueStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000A /* RecurringCueStrip.swift */; };
+		7A6A1000000000000000000B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000B /* HomeViewModelTests.swift */; };
 		98EC74780F86C8B806232B6C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B844DBECDC81333A9A63EE8 /* AppTab.swift */; };
 		D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */; };
 		DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F738338E47F72838A53C /* AppEnvironment.swift */; };
@@ -43,6 +49,12 @@
 		7A6A20000000000000000003 /* ArchiveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArchiveView.swift; path = Features/Archive/ArchiveView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000004 /* ProfileView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Features/Profile/ProfileView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000005 /* AppTabTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTabTests.swift; path = App/AppTabTests.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000006 /* HomeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = Features/Home/HomeViewModel.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000007 /* AtmosphericHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AtmosphericHeaderView.swift; path = Features/Home/Components/AtmosphericHeaderView.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000008 /* PrimaryCaptureButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrimaryCaptureButton.swift; path = Features/Home/Components/PrimaryCaptureButton.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000009 /* RecentDreamCallbackCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecentDreamCallbackCard.swift; path = Features/Home/Components/RecentDreamCallbackCard.swift; sourceTree = "<group>"; };
+		7A6A2000000000000000000A /* RecurringCueStrip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecurringCueStrip.swift; path = Features/Home/Components/RecurringCueStrip.swift; sourceTree = "<group>"; };
+		7A6A2000000000000000000B /* HomeViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeViewModelTests.swift; path = Features/Home/HomeViewModelTests.swift; sourceTree = "<group>"; };
 		91B77C47AF22356AC1E4B3BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DreamAnalysisApp.app; path = DreamAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DreamAnalysisAppTests.xctest; path = DreamAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +95,7 @@
 			children = (
 				60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */,
 				7A6A20000000000000000005 /* AppTabTests.swift */,
+				7A6A2000000000000000000B /* HomeViewModelTests.swift */,
 			);
 			name = DreamAnalysisAppTests;
 			path = DreamAnalysisAppTests;
@@ -96,6 +109,11 @@
 				3B844DBECDC81333A9A63EE8 /* AppTab.swift */,
 				4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */,
 				7A6A20000000000000000001 /* HomeView.swift */,
+				7A6A20000000000000000006 /* HomeViewModel.swift */,
+				7A6A20000000000000000007 /* AtmosphericHeaderView.swift */,
+				7A6A20000000000000000008 /* PrimaryCaptureButton.swift */,
+				7A6A20000000000000000009 /* RecentDreamCallbackCard.swift */,
+				7A6A2000000000000000000A /* RecurringCueStrip.swift */,
 				7A6A20000000000000000002 /* PatternsView.swift */,
 				7A6A20000000000000000003 /* ArchiveView.swift */,
 				7A6A20000000000000000004 /* ProfileView.swift */,
@@ -231,6 +249,7 @@
 			files = (
 				F2245877A8022DECF8ED0E9D /* AppRootViewModelTests.swift in Sources */,
 				7A6A10000000000000000005 /* AppTabTests.swift in Sources */,
+				7A6A1000000000000000000B /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +262,11 @@
 				98EC74780F86C8B806232B6C /* AppTab.swift in Sources */,
 				68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */,
 				7A6A10000000000000000001 /* HomeView.swift in Sources */,
+				7A6A10000000000000000006 /* HomeViewModel.swift in Sources */,
+				7A6A10000000000000000007 /* AtmosphericHeaderView.swift in Sources */,
+				7A6A10000000000000000008 /* PrimaryCaptureButton.swift in Sources */,
+				7A6A10000000000000000009 /* RecentDreamCallbackCard.swift in Sources */,
+				7A6A1000000000000000000A /* RecurringCueStrip.swift in Sources */,
 				7A6A10000000000000000002 /* PatternsView.swift in Sources */,
 				7A6A10000000000000000003 /* ArchiveView.swift in Sources */,
 				7A6A10000000000000000004 /* ProfileView.swift in Sources */,
