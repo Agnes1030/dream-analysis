@@ -6,4 +6,11 @@ final class AppRootViewModelTests: XCTestCase {
         let state = AppRootState()
         XCTAssertEqual(state.selectedTab, .home)
     }
+
+    func testAllTabsProvideNonEmptyShellMetadata() {
+        for tab in AppTab.allCases {
+            XCTAssertFalse(tab.title.isEmpty)
+            XCTAssertFalse(tab.systemImageName.isEmpty)
+        }
+    }
 }

@@ -13,29 +13,32 @@ struct AppRootView: View {
     }
 
     var body: some View {
-        Text(title(for: state.selectedTab))
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(
-                LinearGradient(
-                    colors: [Color(red: 0.10, green: 0.09, blue: 0.18), Color(red: 0.24, green: 0.19, blue: 0.35)],
-                    startPoint: .top,
-                    endPoint: .bottom
-                )
-            )
-            .foregroundStyle(.white)
-    }
+        TabView(selection: $state.selectedTab) {
+            HomeView()
+                .tabItem {
+                    Label(AppTab.home.title, systemImage: AppTab.home.systemImageName)
+                }
+                .tag(AppTab.home)
 
-    private func title(for tab: AppTab) -> String {
-        switch tab {
-        case .home:
-            return "Begin with the dream"
-        case .patterns:
-            return "Patterns"
-        case .archive:
-            return "Archive"
-        case .me:
-            return "Me"
+            PatternsView()
+                .tabItem {
+                    Label(AppTab.patterns.title, systemImage: AppTab.patterns.systemImageName)
+                }
+                .tag(AppTab.patterns)
+
+            ArchiveView()
+                .tabItem {
+                    Label(AppTab.archive.title, systemImage: AppTab.archive.systemImageName)
+                }
+                .tag(AppTab.archive)
+
+            ProfileView()
+                .tabItem {
+                    Label(AppTab.me.title, systemImage: AppTab.me.systemImageName)
+                }
+                .tag(AppTab.me)
         }
+        .tint(Color(red: 0.45, green: 0.37, blue: 0.72))
     }
 }
 

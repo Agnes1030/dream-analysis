@@ -10,6 +10,11 @@
 		423629AE40D1FD5A5C4DAE77 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 714BADD95558BC2A36B21131 /* XCTest.framework */; };
 		68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */; };
 		766EC5EAD944AABBEC580AC0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B77C47AF22356AC1E4B3BC /* Foundation.framework */; };
+		7A6A10000000000000000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000001 /* HomeView.swift */; };
+		7A6A10000000000000000002 /* PatternsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000002 /* PatternsView.swift */; };
+		7A6A10000000000000000003 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000003 /* ArchiveView.swift */; };
+		7A6A10000000000000000004 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000004 /* ProfileView.swift */; };
+		7A6A10000000000000000005 /* AppTabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000005 /* AppTabTests.swift */; };
 		98EC74780F86C8B806232B6C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B844DBECDC81333A9A63EE8 /* AppTab.swift */; };
 		D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */; };
 		DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F738338E47F72838A53C /* AppEnvironment.swift */; };
@@ -33,6 +38,11 @@
 		4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
 		60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootViewModelTests.swift; path = App/AppRootViewModelTests.swift; sourceTree = "<group>"; };
 		714BADD95558BC2A36B21131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = "<group>"; };
+		7A6A20000000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000002 /* PatternsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternsView.swift; path = Features/Patterns/PatternsView.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000003 /* ArchiveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArchiveView.swift; path = Features/Archive/ArchiveView.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000004 /* ProfileView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileView.swift; path = Features/Profile/ProfileView.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000005 /* AppTabTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppTabTests.swift; path = App/AppTabTests.swift; sourceTree = "<group>"; };
 		91B77C47AF22356AC1E4B3BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DreamAnalysisApp.app; path = DreamAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DreamAnalysisAppTests.xctest; path = DreamAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */,
+				7A6A20000000000000000005 /* AppTabTests.swift */,
 			);
 			name = DreamAnalysisAppTests;
 			path = DreamAnalysisAppTests;
@@ -84,6 +95,10 @@
 				CEF9F738338E47F72838A53C /* AppEnvironment.swift */,
 				3B844DBECDC81333A9A63EE8 /* AppTab.swift */,
 				4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */,
+				7A6A20000000000000000001 /* HomeView.swift */,
+				7A6A20000000000000000002 /* PatternsView.swift */,
+				7A6A20000000000000000003 /* ArchiveView.swift */,
+				7A6A20000000000000000004 /* ProfileView.swift */,
 				0CE92F3DF42BD6A04B1BD9BE /* Resources */,
 			);
 			name = DreamAnalysisApp;
@@ -215,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2245877A8022DECF8ED0E9D /* AppRootViewModelTests.swift in Sources */,
+				7A6A10000000000000000005 /* AppTabTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +242,10 @@
 				DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */,
 				98EC74780F86C8B806232B6C /* AppTab.swift in Sources */,
 				68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */,
+				7A6A10000000000000000001 /* HomeView.swift in Sources */,
+				7A6A10000000000000000002 /* PatternsView.swift in Sources */,
+				7A6A10000000000000000003 /* ArchiveView.swift in Sources */,
+				7A6A10000000000000000004 /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
