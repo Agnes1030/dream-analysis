@@ -37,30 +37,8 @@ struct HomeView: View {
             .navigationTitle("Dream space")
             .navigationBarTitleDisplayMode(.inline)
             .sheet(isPresented: $viewModel.isPresentingCapture) {
-                capturePlaceholder
+                DreamCaptureView()
             }
-        }
-    }
-
-    private var capturePlaceholder: some View {
-        NavigationStack {
-            VStack(spacing: 16) {
-                Image(systemName: "moonrise.fill")
-                    .font(.system(size: 32))
-                    .foregroundStyle(Color(red: 0.46, green: 0.39, blue: 0.74))
-
-                Text("Dream capture is almost here")
-                    .font(.title3.weight(.semibold))
-
-                Text("For now, this doorway simply opens the ritual flow without building the full capture experience yet.")
-                    .font(.body)
-                    .multilineTextAlignment(.center)
-                    .foregroundStyle(.secondary)
-            }
-            .padding(24)
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color(.systemBackground))
-            .presentationDetents([.medium])
         }
     }
 }
