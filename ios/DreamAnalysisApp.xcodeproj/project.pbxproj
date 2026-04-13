@@ -23,6 +23,7 @@
 		7A6A1000000000000000000B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000B /* HomeViewModelTests.swift */; };
 		7A6A1000000000000000000C /* DreamEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000C /* DreamEntry.swift */; };
 		AB1100000000000000000005 /* PrivateWhisper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2200000000000000000005 /* PrivateWhisper.swift */; };
+		AC1100000000000000000001 /* AppLaunchSmokeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2200000000000000000001 /* AppLaunchSmokeTests.swift */; };
 		AA1100000000000000000005 /* SafeHarborItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000005 /* SafeHarborItem.swift */; };
 		AB1100000000000000000001 /* PrivateWhispersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2200000000000000000001 /* PrivateWhispersView.swift */; };
 		AB1100000000000000000002 /* PrivateWhispersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB2200000000000000000002 /* PrivateWhispersViewModel.swift */; };
@@ -88,6 +89,7 @@
 		4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootView.swift; path = App/AppRootView.swift; sourceTree = "<group>"; };
 		60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppRootViewModelTests.swift; path = App/AppRootViewModelTests.swift; sourceTree = "<group>"; };
 		714BADD95558BC2A36B21131 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = "<group>"; };
+		AC2200000000000000000001 /* AppLaunchSmokeTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppLaunchSmokeTests.swift; path = Smoke/AppLaunchSmokeTests.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000001 /* HomeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = Features/Home/HomeView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000002 /* PatternsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternsView.swift; path = Features/Patterns/PatternsView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000003 /* ArchiveView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArchiveView.swift; path = Features/Archive/ArchiveView.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				7A6A2000000000000000002B /* RitualFlowCoordinatorTests.swift */,
 				AA2200000000000000000004 /* SafeHarborViewModelTests.swift */,
 				AB2200000000000000000004 /* PrivateWhispersViewModelTests.swift */,
+				AC2200000000000000000001 /* AppLaunchSmokeTests.swift */,
 			);
 			name = DreamAnalysisAppTests;
 			path = DreamAnalysisAppTests;
@@ -391,6 +394,7 @@
 				7A6A1000000000000000002B /* RitualFlowCoordinatorTests.swift in Sources */,
 				AA1100000000000000000004 /* SafeHarborViewModelTests.swift in Sources */,
 				AB1100000000000000000004 /* PrivateWhispersViewModelTests.swift in Sources */,
+				AC1100000000000000000001 /* AppLaunchSmokeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
