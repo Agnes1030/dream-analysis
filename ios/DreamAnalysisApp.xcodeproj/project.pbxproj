@@ -22,6 +22,7 @@
 		7A6A1000000000000000000A /* RecurringCueStrip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000A /* RecurringCueStrip.swift */; };
 		7A6A1000000000000000000B /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000B /* HomeViewModelTests.swift */; };
 		7A6A1000000000000000000C /* DreamEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000C /* DreamEntry.swift */; };
+		AA1100000000000000000005 /* SafeHarborItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000005 /* SafeHarborItem.swift */; };
 		7A6A10000000000000000014 /* FollowUpPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000014 /* FollowUpPrompt.swift */; };
 		7A6A10000000000000000015 /* FollowUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000015 /* FollowUpView.swift */; };
 		7A6A10000000000000000016 /* FollowUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000016 /* FollowUpViewModel.swift */; };
@@ -49,6 +50,13 @@
 			7A6A10000000000000000025 /* ArchiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000025 /* ArchiveViewModel.swift */; };
 			7A6A10000000000000000026 /* DreamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000026 /* DreamDetailView.swift */; };
 			7A6A10000000000000000027 /* ArchiveViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000027 /* ArchiveViewModelTests.swift */; };
+		7A6A10000000000000000028 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000028 /* ProfileViewModel.swift */; };
+		7A6A10000000000000000029 /* MemoryControlsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000029 /* MemoryControlsSection.swift */; };
+		7A6A1000000000000000002A /* ProfileViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000002A /* ProfileViewModelTests.swift */; };
+		AA1100000000000000000001 /* SafeHarborView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000001 /* SafeHarborView.swift */; };
+		AA1100000000000000000002 /* SafeHarborViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000002 /* SafeHarborViewModel.swift */; };
+		AA1100000000000000000003 /* SafeHarborService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000003 /* SafeHarborService.swift */; };
+		AA1100000000000000000004 /* SafeHarborViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2200000000000000000004 /* SafeHarborViewModelTests.swift */; };
 		98EC74780F86C8B806232B6C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B844DBECDC81333A9A63EE8 /* AppTab.swift */; };
 		D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */; };
 		DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F738338E47F72838A53C /* AppEnvironment.swift */; };
@@ -86,6 +94,7 @@
 		7A6A2000000000000000000A /* RecurringCueStrip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecurringCueStrip.swift; path = Features/Home/Components/RecurringCueStrip.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000000B /* HomeViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HomeViewModelTests.swift; path = Features/Home/HomeViewModelTests.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000000C /* DreamEntry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DreamEntry.swift; path = Models/DreamEntry.swift; sourceTree = "<group>"; };
+		AA2200000000000000000005 /* SafeHarborItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeHarborItem.swift; path = Models/SafeHarborItem.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000014 /* FollowUpPrompt.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FollowUpPrompt.swift; path = Models/FollowUpPrompt.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000015 /* FollowUpView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FollowUpView.swift; path = Features/RitualFlow/FollowUp/FollowUpView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000016 /* FollowUpViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FollowUpViewModel.swift; path = Features/RitualFlow/FollowUp/FollowUpViewModel.swift; sourceTree = "<group>"; };
@@ -111,6 +120,13 @@
 		7A6A20000000000000000022 /* PatternSummaryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternSummaryService.swift; path = Services/Patterns/PatternSummaryService.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000023 /* PatternsViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternsViewModelTests.swift; path = Features/Patterns/PatternsViewModelTests.swift; sourceTree = "<group>"; };
 			7A6A20000000000000000027 /* ArchiveViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArchiveViewModelTests.swift; path = Features/Archive/ArchiveViewModelTests.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000028 /* ProfileViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileViewModel.swift; path = Features/Profile/ProfileViewModel.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000029 /* MemoryControlsSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryControlsSection.swift; path = Features/Profile/Components/MemoryControlsSection.swift; sourceTree = "<group>"; };
+		7A6A2000000000000000002A /* ProfileViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProfileViewModelTests.swift; path = Features/Profile/ProfileViewModelTests.swift; sourceTree = "<group>"; };
+		AA2200000000000000000001 /* SafeHarborView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeHarborView.swift; path = Features/SafeHarbor/SafeHarborView.swift; sourceTree = "<group>"; };
+		AA2200000000000000000002 /* SafeHarborViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeHarborViewModel.swift; path = Features/SafeHarbor/SafeHarborViewModel.swift; sourceTree = "<group>"; };
+		AA2200000000000000000003 /* SafeHarborService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeHarborService.swift; path = Services/SafeHarbor/SafeHarborService.swift; sourceTree = "<group>"; };
+		AA2200000000000000000004 /* SafeHarborViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SafeHarborViewModelTests.swift; path = Features/SafeHarbor/SafeHarborViewModelTests.swift; sourceTree = "<group>"; };
 		91B77C47AF22356AC1E4B3BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DreamAnalysisApp.app; path = DreamAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DreamAnalysisAppTests.xctest; path = DreamAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,12 +167,14 @@
 			children = (
 				60D1D48A266712BCCA5DD913 /* AppRootViewModelTests.swift */,
 				7A6A20000000000000000005 /* AppTabTests.swift */,
-			7A6A20000000000000000027 /* ArchiveViewModelTests.swift */,
+				7A6A20000000000000000027 /* ArchiveViewModelTests.swift */,
 				7A6A2000000000000000000B /* HomeViewModelTests.swift */,
 				7A6A20000000000000000012 /* DreamCaptureViewModelTests.swift */,
 				7A6A20000000000000000013 /* FollowUpViewModelTests.swift */,
 				7A6A20000000000000000018 /* InterpretationResultViewModelTests.swift */,
 				7A6A20000000000000000023 /* PatternsViewModelTests.swift */,
+				7A6A2000000000000000002A /* ProfileViewModelTests.swift */,
+				AA2200000000000000000004 /* SafeHarborViewModelTests.swift */,
 			);
 			name = DreamAnalysisAppTests;
 			path = DreamAnalysisAppTests;
@@ -170,6 +188,7 @@
 				3B844DBECDC81333A9A63EE8 /* AppTab.swift */,
 				4BD7F2FEF4A41B51E17429EC /* AppRootView.swift */,
 				7A6A2000000000000000000C /* DreamEntry.swift */,
+				AA2200000000000000000005 /* SafeHarborItem.swift */,
 				7A6A20000000000000000014 /* FollowUpPrompt.swift */,
 				7A6A20000000000000000019 /* Interpretation.swift */,
 				7A6A20000000000000000024 /* PatternSummary.swift */,
@@ -198,9 +217,14 @@
 				7A6A20000000000000000020 /* TrajectorySummaryBlock.swift */,
 				7A6A20000000000000000021 /* RecurringSymbolsSection.swift */,
 				7A6A20000000000000000003 /* ArchiveView.swift */,
-			7A6A20000000000000000025 /* ArchiveViewModel.swift */,
-			7A6A20000000000000000026 /* DreamDetailView.swift */,
+				7A6A20000000000000000025 /* ArchiveViewModel.swift */,
+				7A6A20000000000000000026 /* DreamDetailView.swift */,
 				7A6A20000000000000000004 /* ProfileView.swift */,
+				7A6A20000000000000000028 /* ProfileViewModel.swift */,
+				7A6A20000000000000000029 /* MemoryControlsSection.swift */,
+				AA2200000000000000000001 /* SafeHarborView.swift */,
+				AA2200000000000000000002 /* SafeHarborViewModel.swift */,
+				AA2200000000000000000003 /* SafeHarborService.swift */,
 				0CE92F3DF42BD6A04B1BD9BE /* Resources */,
 			);
 			name = DreamAnalysisApp;
@@ -338,7 +362,9 @@
 				7A6A10000000000000000013 /* FollowUpViewModelTests.swift in Sources */,
 				7A6A10000000000000000018 /* InterpretationResultViewModelTests.swift in Sources */,
 				7A6A10000000000000000023 /* PatternsViewModelTests.swift in Sources */,
-			7A6A10000000000000000027 /* ArchiveViewModelTests.swift in Sources */,
+				7A6A10000000000000000027 /* ArchiveViewModelTests.swift in Sources */,
+				7A6A1000000000000000002A /* ProfileViewModelTests.swift in Sources */,
+				AA1100000000000000000004 /* SafeHarborViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +377,7 @@
 				98EC74780F86C8B806232B6C /* AppTab.swift in Sources */,
 				68D84587B6E4F9368FC44B0C /* AppRootView.swift in Sources */,
 				7A6A1000000000000000000C /* DreamEntry.swift in Sources */,
+				AA1100000000000000000005 /* SafeHarborItem.swift in Sources */,
 				7A6A10000000000000000014 /* FollowUpPrompt.swift in Sources */,
 				7A6A10000000000000000019 /* Interpretation.swift in Sources */,
 				7A6A10000000000000000024 /* PatternSummary.swift in Sources */,
@@ -379,9 +406,14 @@
 				7A6A10000000000000000020 /* TrajectorySummaryBlock.swift in Sources */,
 				7A6A10000000000000000021 /* RecurringSymbolsSection.swift in Sources */,
 				7A6A10000000000000000003 /* ArchiveView.swift in Sources */,
-			7A6A10000000000000000025 /* ArchiveViewModel.swift in Sources */,
-			7A6A10000000000000000026 /* DreamDetailView.swift in Sources */,
+				7A6A10000000000000000025 /* ArchiveViewModel.swift in Sources */,
+				7A6A10000000000000000026 /* DreamDetailView.swift in Sources */,
 				7A6A10000000000000000004 /* ProfileView.swift in Sources */,
+				7A6A10000000000000000028 /* ProfileViewModel.swift in Sources */,
+				7A6A10000000000000000029 /* MemoryControlsSection.swift in Sources */,
+				AA1100000000000000000001 /* SafeHarborView.swift in Sources */,
+				AA1100000000000000000002 /* SafeHarborViewModel.swift in Sources */,
+				AA1100000000000000000003 /* SafeHarborService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

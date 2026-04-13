@@ -1,18 +1,41 @@
 import SwiftUI
 
 struct ProfileView: View {
+    private let viewModel = ProfileViewModel()
+
     var body: some View {
-        VStack(spacing: 12) {
-            Text("Me")
-                .font(.title2.weight(.semibold))
-            Text("A gentle space for your profile and preferences.")
+        NavigationStack {
+            ScrollView(showsIndicators: false) {
+                VStack(alignment: .leading, spacing: 20) {
+                    hero
+
+                    MemoryControlsSection(
+                        syncExplanation: viewModel.syncExplanation,
+                        privacyExplanation: viewModel.privacyExplanation,
+                        memoryExplanation: viewModel.memoryExplanation
+                    )
+                }
+                .padding(20)
+                .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .navigationTitle("Me")
+            .background(Color(.systemBackground))
+        }
+    }
+
+    private var hero: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Text("A quiet place to understand what stays with you.")
+                .font(.system(.title2, design: .serif, weight: .semibold))
+
+            Text("These notes help explain how your dreams are remembered, protected, and carried gently from one reflection to the next.")
                 .font(.body)
-                .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .padding(24)
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(.systemBackground))
+        .background(Color(.tertiarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 28, style: .continuous))
     }
 }
 
