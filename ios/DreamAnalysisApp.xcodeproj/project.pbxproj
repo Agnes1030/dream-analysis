@@ -35,11 +35,17 @@
 		7A6A10000000000000000013 /* FollowUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000013 /* FollowUpViewModelTests.swift */; };
 		7A6A10000000000000000018 /* InterpretationResultViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000018 /* InterpretationResultViewModelTests.swift */; };
 		7A6A10000000000000000019 /* Interpretation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000019 /* Interpretation.swift */; };
+		7A6A10000000000000000024 /* PatternSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000024 /* PatternSummary.swift */; };
 		7A6A1000000000000000001A /* InterpretationResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001A /* InterpretationResultViewModel.swift */; };
 		7A6A1000000000000000001B /* InterpretationResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001B /* InterpretationResultView.swift */; };
 		7A6A1000000000000000001C /* CoreInsightCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001C /* CoreInsightCard.swift */; };
 		7A6A1000000000000000001D /* PersonalizedReflectionCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001D /* PersonalizedReflectionCard.swift */; };
 		7A6A1000000000000000001E /* DreamInterpretationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001E /* DreamInterpretationService.swift */; };
+		7A6A1000000000000000001F /* PatternsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000001F /* PatternsViewModel.swift */; };
+		7A6A10000000000000000020 /* TrajectorySummaryBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000020 /* TrajectorySummaryBlock.swift */; };
+		7A6A10000000000000000021 /* RecurringSymbolsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000021 /* RecurringSymbolsSection.swift */; };
+		7A6A10000000000000000022 /* PatternSummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000022 /* PatternSummaryService.swift */; };
+		7A6A10000000000000000023 /* PatternsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000023 /* PatternsViewModelTests.swift */; };
 		98EC74780F86C8B806232B6C /* AppTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B844DBECDC81333A9A63EE8 /* AppTab.swift */; };
 		D90F18DCF91D8AC70DA67936 /* DreamAnalysisAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48072F31C89C682CEFC38F0B /* DreamAnalysisAppApp.swift */; };
 		DBB57C95336296DD9C5817E1 /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF9F738338E47F72838A53C /* AppEnvironment.swift */; };
@@ -88,11 +94,17 @@
 		7A6A20000000000000000013 /* FollowUpViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FollowUpViewModelTests.swift; path = Features/RitualFlow/FollowUpViewModelTests.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000018 /* InterpretationResultViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpretationResultViewModelTests.swift; path = Features/RitualFlow/InterpretationResultViewModelTests.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000019 /* Interpretation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interpretation.swift; path = Models/Interpretation.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000024 /* PatternSummary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternSummary.swift; path = Models/PatternSummary.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000001A /* InterpretationResultViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpretationResultViewModel.swift; path = Features/RitualFlow/Result/InterpretationResultViewModel.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000001B /* InterpretationResultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterpretationResultView.swift; path = Features/RitualFlow/Result/InterpretationResultView.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000001C /* CoreInsightCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreInsightCard.swift; path = Features/RitualFlow/Result/Components/CoreInsightCard.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000001D /* PersonalizedReflectionCard.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersonalizedReflectionCard.swift; path = Features/RitualFlow/Result/Components/PersonalizedReflectionCard.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000001E /* DreamInterpretationService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DreamInterpretationService.swift; path = Services/Interpretation/DreamInterpretationService.swift; sourceTree = "<group>"; };
+		7A6A2000000000000000001F /* PatternsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternsViewModel.swift; path = Features/Patterns/PatternsViewModel.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000020 /* TrajectorySummaryBlock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TrajectorySummaryBlock.swift; path = Features/Patterns/Components/TrajectorySummaryBlock.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000021 /* RecurringSymbolsSection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecurringSymbolsSection.swift; path = Features/Patterns/Components/RecurringSymbolsSection.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000022 /* PatternSummaryService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternSummaryService.swift; path = Services/Patterns/PatternSummaryService.swift; sourceTree = "<group>"; };
+		7A6A20000000000000000023 /* PatternsViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PatternsViewModelTests.swift; path = Features/Patterns/PatternsViewModelTests.swift; sourceTree = "<group>"; };
 		91B77C47AF22356AC1E4B3BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		AB98A0C4A066E15A4378B639 /* DreamAnalysisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = DreamAnalysisApp.app; path = DreamAnalysisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA44439438B45A9F23F79FB5 /* DreamAnalysisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = DreamAnalysisAppTests.xctest; path = DreamAnalysisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +149,7 @@
 				7A6A20000000000000000012 /* DreamCaptureViewModelTests.swift */,
 				7A6A20000000000000000013 /* FollowUpViewModelTests.swift */,
 				7A6A20000000000000000018 /* InterpretationResultViewModelTests.swift */,
+				7A6A20000000000000000023 /* PatternsViewModelTests.swift */,
 			);
 			name = DreamAnalysisAppTests;
 			path = DreamAnalysisAppTests;
@@ -152,6 +165,7 @@
 				7A6A2000000000000000000C /* DreamEntry.swift */,
 				7A6A20000000000000000014 /* FollowUpPrompt.swift */,
 				7A6A20000000000000000019 /* Interpretation.swift */,
+				7A6A20000000000000000024 /* PatternSummary.swift */,
 				7A6A20000000000000000001 /* HomeView.swift */,
 				7A6A20000000000000000006 /* HomeViewModel.swift */,
 				7A6A20000000000000000007 /* AtmosphericHeaderView.swift */,
@@ -170,8 +184,12 @@
 				7A6A20000000000000000010 /* AudioRecordingService.swift */,
 				7A6A20000000000000000017 /* FollowUpPromptService.swift */,
 				7A6A2000000000000000001E /* DreamInterpretationService.swift */,
+				7A6A20000000000000000022 /* PatternSummaryService.swift */,
 				7A6A20000000000000000011 /* SpeechTranscriptionService.swift */,
 				7A6A20000000000000000002 /* PatternsView.swift */,
+				7A6A2000000000000000001F /* PatternsViewModel.swift */,
+				7A6A20000000000000000020 /* TrajectorySummaryBlock.swift */,
+				7A6A20000000000000000021 /* RecurringSymbolsSection.swift */,
 				7A6A20000000000000000003 /* ArchiveView.swift */,
 				7A6A20000000000000000004 /* ProfileView.swift */,
 				0CE92F3DF42BD6A04B1BD9BE /* Resources */,
@@ -310,6 +328,7 @@
 				7A6A10000000000000000012 /* DreamCaptureViewModelTests.swift in Sources */,
 				7A6A10000000000000000013 /* FollowUpViewModelTests.swift in Sources */,
 				7A6A10000000000000000018 /* InterpretationResultViewModelTests.swift in Sources */,
+				7A6A10000000000000000023 /* PatternsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +343,7 @@
 				7A6A1000000000000000000C /* DreamEntry.swift in Sources */,
 				7A6A10000000000000000014 /* FollowUpPrompt.swift in Sources */,
 				7A6A10000000000000000019 /* Interpretation.swift in Sources */,
+				7A6A10000000000000000024 /* PatternSummary.swift in Sources */,
 				7A6A10000000000000000001 /* HomeView.swift in Sources */,
 				7A6A10000000000000000006 /* HomeViewModel.swift in Sources */,
 				7A6A10000000000000000007 /* AtmosphericHeaderView.swift in Sources */,
@@ -342,8 +362,12 @@
 				7A6A10000000000000000010 /* AudioRecordingService.swift in Sources */,
 				7A6A10000000000000000017 /* FollowUpPromptService.swift in Sources */,
 				7A6A1000000000000000001E /* DreamInterpretationService.swift in Sources */,
+				7A6A10000000000000000022 /* PatternSummaryService.swift in Sources */,
 				7A6A10000000000000000011 /* SpeechTranscriptionService.swift in Sources */,
 				7A6A10000000000000000002 /* PatternsView.swift in Sources */,
+				7A6A1000000000000000001F /* PatternsViewModel.swift in Sources */,
+				7A6A10000000000000000020 /* TrajectorySummaryBlock.swift in Sources */,
+				7A6A10000000000000000021 /* RecurringSymbolsSection.swift in Sources */,
 				7A6A10000000000000000003 /* ArchiveView.swift in Sources */,
 				7A6A10000000000000000004 /* ProfileView.swift in Sources */,
 			);
