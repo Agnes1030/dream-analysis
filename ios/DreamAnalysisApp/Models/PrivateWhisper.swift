@@ -1,9 +1,9 @@
 import Foundation
 
 struct PrivateWhisper: Equatable, Sendable {
-    var text: String
+    var featuredText: String
 
-    init(text: String = "") {
-        self.text = text
+    init(featuredText: String = "") {
+        self.featuredText = featuredText
     }
 }
