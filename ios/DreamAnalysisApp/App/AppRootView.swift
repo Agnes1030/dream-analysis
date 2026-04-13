@@ -8,7 +8,7 @@ struct AppRootView: View {
     let environment: AppEnvironment
     @State private var state = AppRootState()
 
-    init(environment: AppEnvironment = AppEnvironment()) {
+    init(environment: AppEnvironment = .live()) {
         self.environment = environment
     }
 
@@ -39,9 +39,34 @@ struct AppRootView: View {
                 .tag(AppTab.me)
         }
         .tint(Color(red: 0.45, green: 0.37, blue: 0.72))
+        .sheet(isPresented: ritualFlowBinding) {
+            ritualFlowResultView
+        }
+    }
+
+    private var ritualFlowBinding: Binding<Bool> {
+        Binding(
+            get: { environment.ritualFlowCoordinator.isPresentingFlow },
+            set: { isPresenting in
+                if isPresenting == false {
+                    environment.ritualFlowCoordinator.finishResult()
+                }
+            }
+        )
+    }
+
+    private var ritualFlowResultView: some View {
+        let fixtures = environment.previewFixtures
+
+        return InterpretationResultView(
+            viewModel: InterpretationResultViewModel(
+                dream: fixtures.dream,
+                interpretation: fixtures.interpretation
+            )
+        )
     }
 }
 
 #Preview {
-    AppRootView()
+    AppRootView(environment: .preview())
 }
