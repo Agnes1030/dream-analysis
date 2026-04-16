@@ -5,7 +5,23 @@ protocol PatternSummaryServicing {
 }
 
 struct PatternSummaryService: PatternSummaryServicing {
+    enum Scenario {
+        case early
+        case established
+    }
+
+    private let scenario: Scenario
+
+    init(scenario: Scenario = .established) {
+        self.scenario = scenario
+    }
+
     func loadSummary() -> PatternSummary {
-        .earlyUse
+        switch scenario {
+        case .early:
+            .earlyUse
+        case .established:
+            .establishedUse
+        }
     }
 }

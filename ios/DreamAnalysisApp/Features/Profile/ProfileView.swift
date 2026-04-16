@@ -9,11 +9,7 @@ struct ProfileView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     hero
 
-                    MemoryControlsSection(
-                        syncExplanation: viewModel.syncExplanation,
-                        privacyExplanation: viewModel.privacyExplanation,
-                        memoryExplanation: viewModel.memoryExplanation
-                    )
+                    MemoryControlsSection(viewModel: viewModel)
                 }
                 .padding(20)
                 .frame(maxWidth: .infinity, alignment: .leading)

@@ -2,9 +2,13 @@ import XCTest
 @testable import DreamAnalysisApp
 
 final class HomeViewModelTests: XCTestCase {
-    func testPrimaryActionLaunchesCaptureFlow() {
+    func testPrimaryActionLaunchesSharedCaptureFlow() {
         let model = HomeViewModel()
-        model.didTapCapture()
-        XCTAssertTrue(model.isPresentingCapture)
+        let coordinator = RitualFlowCoordinator()
+
+        model.didTapCapture(using: coordinator)
+
+        XCTAssertTrue(coordinator.isPresentingFlow)
+        XCTAssertEqual(coordinator.step, .capture)
     }
 }

@@ -1,12 +1,23 @@
 import SwiftUI
 
 struct FollowUpView: View {
-    @Environment(\.dismiss) private var dismiss
     @State private var viewModel: FollowUpViewModel
     @State private var textAnswer = ""
 
-    init(viewModel: FollowUpViewModel) {
+    let onSkip: () -> Void
+    let onSelectOption: (String) -> Void
+    let onSubmitText: (String?) -> Void
+
+    init(
+        viewModel: FollowUpViewModel,
+        onSkip: @escaping () -> Void = {},
+        onSelectOption: @escaping (String) -> Void = { _ in },
+        onSubmitText: @escaping (String?) -> Void = { _ in }
+    ) {
         _viewModel = State(initialValue: viewModel)
+        self.onSkip = onSkip
+        self.onSelectOption = onSelectOption
+        self.onSubmitText = onSubmitText
     }
 
     var body: some View {
@@ -40,7 +51,7 @@ struct FollowUpView: View {
 
                     Button("Skip for now") {
                         viewModel.skip()
-                        dismiss()
+                        onSkip()
                     }
                     .buttonStyle(.bordered)
                     .foregroundStyle(Color.white.opacity(0.9))
@@ -62,7 +73,7 @@ struct FollowUpView: View {
                 ForEach(viewModel.prompt.options, id: \.self) { option in
                     Button(option) {
                         viewModel.selectOption(option)
-                        dismiss()
+                        onSelectOption(option)
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(Color.white.opacity(0.18))
@@ -76,7 +87,7 @@ struct FollowUpView: View {
 
                 Button("Continue") {
                     viewModel.submitTextAnswer(textAnswer)
-                    dismiss()
+                    onSubmitText(viewModel.answer)
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(Color(red: 0.81, green: 0.74, blue: 0.98))
