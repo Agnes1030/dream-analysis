@@ -1,8 +1,21 @@
 import SwiftUI
 
 struct DreamCaptureView: View {
-    @Environment(\.dismiss) private var dismiss
-    @State private var viewModel = DreamCaptureViewModel()
+    let environment: AppEnvironment
+    @State private var viewModel: DreamCaptureViewModel
+
+    init(
+        environment: AppEnvironment = .preview(),
+        viewModel: DreamCaptureViewModel? = nil
+    ) {
+        self.environment = environment
+        _viewModel = State(
+            initialValue: viewModel ?? DreamCaptureViewModel(
+                audioRecordingService: environment.audioRecordingService,
+                speechTranscriptionService: environment.speechTranscriptionService
+            )
+        )
+    }
 
     var body: some View {
         NavigationStack {
@@ -26,7 +39,7 @@ struct DreamCaptureView: View {
                             .font(.title2.weight(.semibold))
                             .foregroundStyle(.white)
 
-                        Text("Take your time. You can start anywhere, and small details are welcome too.")
+                        Text(helperCopy)
                             .font(.body)
                             .multilineTextAlignment(.center)
                             .foregroundStyle(Color.white.opacity(0.82))
@@ -36,16 +49,29 @@ struct DreamCaptureView: View {
                     RecordingOrbView(isRecording: viewModel.isRecording)
                         .padding(.vertical, 8)
 
-                    Button(viewModel.isRecording ? "Pause for now" : "Begin speaking") {
-                        if viewModel.isRecording {
-                            viewModel.stopCapture()
-                        } else {
-                            viewModel.startCapture()
+                    Button(primaryButtonTitle) {
+                        Task {
+                            if viewModel.isRecording {
+                                await viewModel.stopCapture()
+                            } else {
+                                await viewModel.startCapture()
+                            }
                         }
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(Color(red: 0.81, green: 0.74, blue: 0.98))
                     .foregroundStyle(Color(red: 0.16, green: 0.10, blue: 0.28))
+
+                    if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                            .foregroundStyle(Color.white.opacity(0.86))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(16)
+                            .background(Color.white.opacity(0.10))
+                            .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+                    }
 
                     VStack(alignment: .leading, spacing: 12) {
                         Text("Transcript")
@@ -62,8 +88,10 @@ struct DreamCaptureView: View {
                     }
 
                     Button("Continue with this dream") {
-                        _ = viewModel.finishCapture()
-                        dismiss()
+                        Task {
+                            await viewModel.stopCapture()
+                            environment.ritualFlowCoordinator.continueFromCapture(viewModel.finishCapture())
+                        }
                     }
                     .buttonStyle(.bordered)
                     .controlSize(.large)
@@ -78,15 +106,39 @@ struct DreamCaptureView: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Close") {
-                        dismiss()
+                        Task {
+                            await viewModel.stopCapture()
+                            environment.ritualFlowCoordinator.cancelFlow()
+                        }
                     }
                     .foregroundStyle(Color.white.opacity(0.88))
                 }
             }
         }
     }
+
+    private var primaryButtonTitle: String {
+        viewModel.isRecording ? "Pause for now" : "Begin speaking"
+    }
+
+    private var helperCopy: String {
+        switch viewModel.captureState {
+        case .idle:
+            return "Take your time. You can start anywhere, and small details are welcome too."
+        case .requestingPermissions:
+            return "I’ll ask gently for access before I begin listening."
+        case .listening:
+            return "I’m listening now. Let the dream arrive in its own shape."
+        case .processing:
+            return "Holding the last few words for a moment so they can settle into the page."
+        case .completed:
+            return "Your words have settled here. You can continue speaking or shape the text below."
+        case let .failed(message):
+            return message
+        }
+    }
 }
 
 #Preview {
-    DreamCaptureView()
+    DreamCaptureView(environment: .preview())
 }

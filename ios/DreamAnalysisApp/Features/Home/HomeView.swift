@@ -1,7 +1,12 @@
 import SwiftUI
 
 struct HomeView: View {
+    let environment: AppEnvironment
     @State private var viewModel = HomeViewModel()
+
+    init(environment: AppEnvironment = .preview()) {
+        self.environment = environment
+    }
 
     var body: some View {
         NavigationStack {
@@ -22,7 +27,7 @@ struct HomeView: View {
                         AtmosphericHeaderView()
 
                         PrimaryCaptureButton {
-                            viewModel.didTapCapture()
+                            viewModel.didTapCapture(using: environment.ritualFlowCoordinator)
                         }
 
                         VStack(alignment: .leading, spacing: 16) {
@@ -36,9 +41,6 @@ struct HomeView: View {
             }
             .navigationTitle("Dream space")
             .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $viewModel.isPresentingCapture) {
-                DreamCaptureView()
-            }
         }
     }
 }

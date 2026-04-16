@@ -36,10 +36,10 @@ struct ArchiveView: View {
 
     private var emptyState: some View {
         VStack(spacing: 14) {
-            Text("Archive")
+            Text(viewModel.emptyStateTitle)
                 .font(.title2.weight(.semibold))
 
-            Text("Saved dreams can rest here for a later return.")
+            Text(viewModel.emptyStateMessage)
                 .font(.body)
                 .multilineTextAlignment(.center)
                 .foregroundStyle(.secondary)
@@ -49,7 +49,11 @@ struct ArchiveView: View {
 
     private var dreamList: some View {
         ScrollView(showsIndicators: false) {
-            VStack(alignment: .leading, spacing: 12) {
+            VStack(alignment: .leading, spacing: 16) {
+                if let summary = viewModel.continuitySummary {
+                    continuityCard(summary)
+                }
+
                 Text("Saved dreams")
                     .font(.headline)
                     .foregroundStyle(.secondary)
@@ -58,7 +62,7 @@ struct ArchiveView: View {
                     Button {
                         viewModel.selectDream(dream)
                     } label: {
-                        VStack(alignment: .leading, spacing: 8) {
+                        VStack(alignment: .leading, spacing: 10) {
                             Text(dream.createdAt.formatted(date: .abbreviated, time: .omitted))
                                 .font(.caption.weight(.semibold))
                                 .textCase(.uppercase)
@@ -68,6 +72,13 @@ struct ArchiveView: View {
                                 .font(.body.weight(.medium))
                                 .foregroundStyle(.primary)
                                 .lineLimit(3)
+
+                            if !dream.tags.isEmpty {
+                                Text(dream.tags.prefix(3).joined(separator: " • "))
+                                    .font(.caption)
+                                    .foregroundStyle(.secondary)
+                                    .lineLimit(1)
+                            }
                         }
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(18)
@@ -78,6 +89,29 @@ struct ArchiveView: View {
                 }
             }
         }
+    }
+
+    private func continuityCard(_ summary: ArchiveContinuitySummary) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text(summary.title)
+                .font(.headline)
+
+            Text(summary.framing)
+                .font(.body)
+                .foregroundStyle(.secondary)
+
+            Text(summary.motifSnapshot)
+                .font(.subheadline.weight(.medium))
+                .foregroundStyle(.primary)
+
+            Text(summary.emotionalDirection)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .padding(20)
+        .background(Color(.secondarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
     private func syncViewModel() {

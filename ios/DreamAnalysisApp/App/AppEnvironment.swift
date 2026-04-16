@@ -33,15 +33,28 @@ struct AppEnvironment {
         self.previewFixtures = previewFixtures
     }
 
+    func makeDreamCaptureViewModel() -> DreamCaptureViewModel {
+        DreamCaptureViewModel(
+            audioRecordingService: audioRecordingService,
+            speechTranscriptionService: speechTranscriptionService
+        )
+    }
+
     static func live() -> AppEnvironment {
-        let coordinator = RitualFlowCoordinator()
-        coordinator.finishResult()
+        let audioRecordingService = AudioRecordingService()
+        let speechTranscriptionService = AppleSpeechTranscriptionService()
+        let followUpPromptService = FollowUpPromptService()
+        let dreamInterpretationService = DreamInterpretationService()
+        let coordinator = RitualFlowCoordinator(
+            followUpPromptService: followUpPromptService,
+            dreamInterpretationService: dreamInterpretationService
+        )
 
         return AppEnvironment(
-            audioRecordingService: AudioRecordingService(),
-            speechTranscriptionService: SpeechTranscriptionService(),
-            followUpPromptService: FollowUpPromptService(),
-            dreamInterpretationService: DreamInterpretationService(),
+            audioRecordingService: audioRecordingService,
+            speechTranscriptionService: speechTranscriptionService,
+            followUpPromptService: followUpPromptService,
+            dreamInterpretationService: dreamInterpretationService,
             patternSummaryService: PatternSummaryService(),
             safeHarborService: SafeHarborService(),
             privateWhisperService: PrivateWhisperService(),
@@ -52,16 +65,24 @@ struct AppEnvironment {
 
     static func preview() -> AppEnvironment {
         let fixtures = PreviewFixtures.demo
+        let audioRecordingService = PreviewAudioRecordingService()
+        let speechTranscriptionService = PreviewSpeechTranscriptionService()
+        let followUpPromptService = PreviewFollowUpPromptService(prompt: fixtures.followUpPrompt)
+        let dreamInterpretationService = PreviewDreamInterpretationService(interpretation: fixtures.interpretation)
+        let coordinator = RitualFlowCoordinator(
+            followUpPromptService: followUpPromptService,
+            dreamInterpretationService: dreamInterpretationService
+        )
 
         return AppEnvironment(
-            audioRecordingService: PreviewAudioRecordingService(),
-            speechTranscriptionService: PreviewSpeechTranscriptionService(),
-            followUpPromptService: PreviewFollowUpPromptService(prompt: fixtures.followUpPrompt),
-            dreamInterpretationService: PreviewDreamInterpretationService(interpretation: fixtures.interpretation),
-            patternSummaryService: PreviewPatternSummaryService(),
+            audioRecordingService: audioRecordingService,
+            speechTranscriptionService: speechTranscriptionService,
+            followUpPromptService: followUpPromptService,
+            dreamInterpretationService: dreamInterpretationService,
+            patternSummaryService: PreviewPatternSummaryService(summary: fixtures.patternSummary),
             safeHarborService: PreviewSafeHarborService(),
             privateWhisperService: PreviewPrivateWhisperService(),
-            ritualFlowCoordinator: RitualFlowCoordinator(),
+            ritualFlowCoordinator: coordinator,
             previewFixtures: fixtures
         )
     }
@@ -76,9 +97,29 @@ private struct PreviewAudioRecordingService: AudioRecordingServicing {
 }
 
 private struct PreviewSpeechTranscriptionService: SpeechTranscribing {
-    func startTranscribing() {}
+    let authorizationStatus: SpeechTranscriptionAuthorizationStatus = .authorized
+    let availability: SpeechTranscriptionAvailability = .available
 
-    func stopTranscribing() {}
+    func refreshAuthorizationStatus() async -> SpeechTranscriptionAuthorizationStatus {
+        authorizationStatus
+    }
+
+    func requestPermissions() async -> SpeechTranscriptionAuthorizationStatus {
+        authorizationStatus
+    }
+
+    func startTranscribing(locale: Locale?) throws -> AsyncStream<SpeechTranscriptionEvent> {
+        AsyncStream { continuation in
+            continuation.yield(.started)
+            continuation.yield(.transcriptUpdated(.init(text: "I was walking through a silver field.", isFinal: false)))
+            continuation.yield(.finished(finalText: "I was walking through a silver field."))
+            continuation.finish()
+        }
+    }
+
+    func stopTranscribing() async {}
+
+    func cancelTranscribing() async {}
 }
 
 private struct PreviewFollowUpPromptService: FollowUpPromptServicing {
@@ -98,8 +139,10 @@ private struct PreviewDreamInterpretationService: DreamInterpretationServicing {
 }
 
 private struct PreviewPatternSummaryService: PatternSummaryServicing {
+    let summary: PatternSummary
+
     func loadSummary() -> PatternSummary {
-        .earlyUse
+        summary
     }
 }
 

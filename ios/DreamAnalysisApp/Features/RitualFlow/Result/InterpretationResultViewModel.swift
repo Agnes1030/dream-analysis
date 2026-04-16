@@ -12,7 +12,11 @@ final class InterpretationResultViewModel {
     }
 
     func save() {
+        dream.interpretationSummary = interpretation.coreInsight
+        dream.reflectionSnippet = interpretation.personalReflection
         dream.isArchived = true
         didShowSavedConfirmation = true
     }
+
+    func complete() {}
 }

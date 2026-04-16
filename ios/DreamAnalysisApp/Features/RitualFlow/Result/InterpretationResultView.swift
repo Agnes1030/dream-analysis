@@ -2,9 +2,14 @@ import SwiftUI
 
 struct InterpretationResultView: View {
     @State private var viewModel: InterpretationResultViewModel
+    private let onComplete: () -> Void
 
-    init(viewModel: InterpretationResultViewModel) {
+    init(
+        viewModel: InterpretationResultViewModel,
+        onComplete: @escaping () -> Void = {}
+    ) {
         _viewModel = State(initialValue: viewModel)
+        self.onComplete = onComplete
     }
 
     var body: some View {
@@ -35,6 +40,15 @@ struct InterpretationResultView: View {
                     }
                     .padding(.horizontal, 20)
                     .padding(.vertical, 24)
+                }
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Done") {
+                        viewModel.complete()
+                        onComplete()
+                    }
+                    .foregroundStyle(Color.white.opacity(0.88))
                 }
             }
             .navigationTitle("Your reflection")

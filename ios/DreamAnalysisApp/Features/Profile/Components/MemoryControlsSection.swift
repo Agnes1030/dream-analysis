@@ -1,34 +1,70 @@
 import SwiftUI
 
 struct MemoryControlsSection: View {
-    let syncExplanation: String
-    let privacyExplanation: String
-    let memoryExplanation: String
+    @Bindable var viewModel: ProfileViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 16) {
+        VStack(alignment: .leading, spacing: 20) {
             Text("Memory and privacy")
                 .font(.headline)
 
-            explanationRow(
-                title: "Sync",
-                detail: syncExplanation
-            )
-
-            explanationRow(
-                title: "Privacy",
-                detail: privacyExplanation
-            )
-
-            explanationRow(
-                title: "Memory",
-                detail: memoryExplanation
-            )
+            ForEach(Array(viewModel.memorySectionRows.enumerated()), id: \.offset) { _, row in
+                switch row {
+                case let .control(title, detail, isEnabled):
+                    controlRow(title: title, detail: detail, isOn: binding(for: title, fallback: isEnabled))
+                case let .infoCard(title, detail):
+                    infoCard(title: title, detail: detail)
+                case let .explanation(title, detail):
+                    explanationRow(title: title, detail: detail)
+                }
+            }
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(20)
         .background(Color(.secondarySystemBackground))
         .clipShape(RoundedRectangle(cornerRadius: 24, style: .continuous))
+    }
+
+    private func binding(for title: String, fallback: Bool) -> Binding<Bool> {
+        switch title {
+        case "Use prior patterns":
+            $viewModel.usePriorPatternsInInterpretation
+        case "Surface continuity cues":
+            $viewModel.surfaceContinuityCuesOnReturn
+        default:
+            Binding(get: { fallback }, set: { _ in })
+        }
+    }
+
+    @ViewBuilder
+    private func controlRow(title: String, detail: String, isOn: Binding<Bool>) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Toggle(isOn: isOn) {
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+            }
+            .tint(.primary)
+
+            Text(detail)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+    }
+
+    @ViewBuilder
+    private func infoCard(title: String, detail: String) -> some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text(title)
+                .font(.subheadline.weight(.semibold))
+
+            Text(detail)
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+        }
+        .padding(16)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.tertiarySystemBackground))
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
     }
 
     @ViewBuilder
@@ -45,10 +81,6 @@ struct MemoryControlsSection: View {
 }
 
 #Preview {
-    MemoryControlsSection(
-        syncExplanation: "Your dream history can stay quietly in step across devices when you choose to keep it.",
-        privacyExplanation: "Raw dream details can remain close to you, while only the context needed for interpretation is shared.",
-        memoryExplanation: "Memory helps the app notice returning symbols, feelings, and places so each reflection can feel more familiar over time."
-    )
-    .padding()
+    MemoryControlsSection(viewModel: ProfileViewModel())
+        .padding()
 }

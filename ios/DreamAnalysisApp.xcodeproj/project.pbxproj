@@ -38,6 +38,9 @@
 		7A6A1000000000000000000F /* RecordingOrbView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A2000000000000000000F /* RecordingOrbView.swift */; };
 		7A6A10000000000000000010 /* AudioRecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000010 /* AudioRecordingService.swift */; };
 		7A6A10000000000000000011 /* SpeechTranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000011 /* SpeechTranscriptionService.swift */; };
+		AD1100000000000000000001 /* SpeechTranscriptionModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2200000000000000000001 /* SpeechTranscriptionModels.swift */; };
+		AD1100000000000000000002 /* AppleSpeechTranscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2200000000000000000002 /* AppleSpeechTranscriptionService.swift */; };
+		AD1100000000000000000003 /* AppleSpeechTranscriptionServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2200000000000000000003 /* AppleSpeechTranscriptionServiceTests.swift */; };
 		7A6A10000000000000000012 /* DreamCaptureViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000012 /* DreamCaptureViewModelTests.swift */; };
 		7A6A10000000000000000013 /* FollowUpViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000013 /* FollowUpViewModelTests.swift */; };
 		7A6A10000000000000000018 /* InterpretationResultViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6A20000000000000000018 /* InterpretationResultViewModelTests.swift */; };
@@ -114,6 +117,9 @@
 		7A6A2000000000000000000E /* DreamCaptureViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DreamCaptureViewModel.swift; path = Features/RitualFlow/Capture/DreamCaptureViewModel.swift; sourceTree = "<group>"; };
 		7A6A2000000000000000000F /* RecordingOrbView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecordingOrbView.swift; path = Features/RitualFlow/Capture/Components/RecordingOrbView.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000010 /* AudioRecordingService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioRecordingService.swift; path = Services/Audio/AudioRecordingService.swift; sourceTree = "<group>"; };
+		AD2200000000000000000001 /* SpeechTranscriptionModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechTranscriptionModels.swift; path = Services/Transcription/SpeechTranscriptionModels.swift; sourceTree = "<group>"; };
+		AD2200000000000000000002 /* AppleSpeechTranscriptionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleSpeechTranscriptionService.swift; path = Services/Transcription/AppleSpeechTranscriptionService.swift; sourceTree = "<group>"; };
+		AD2200000000000000000003 /* AppleSpeechTranscriptionServiceTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AppleSpeechTranscriptionServiceTests.swift; path = Services/Transcription/AppleSpeechTranscriptionServiceTests.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000011 /* SpeechTranscriptionService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpeechTranscriptionService.swift; path = Services/Transcription/SpeechTranscriptionService.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000012 /* DreamCaptureViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DreamCaptureViewModelTests.swift; path = Features/RitualFlow/DreamCaptureViewModelTests.swift; sourceTree = "<group>"; };
 		7A6A20000000000000000013 /* FollowUpViewModelTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FollowUpViewModelTests.swift; path = Features/RitualFlow/FollowUpViewModelTests.swift; sourceTree = "<group>"; };
@@ -233,6 +239,9 @@
 				7A6A20000000000000000017 /* FollowUpPromptService.swift */,
 				7A6A2000000000000000001E /* DreamInterpretationService.swift */,
 				7A6A20000000000000000022 /* PatternSummaryService.swift */,
+				AD2200000000000000000001 /* SpeechTranscriptionModels.swift */,
+				AD2200000000000000000002 /* AppleSpeechTranscriptionService.swift */,
+				AD2200000000000000000003 /* AppleSpeechTranscriptionServiceTests.swift */,
 				7A6A20000000000000000011 /* SpeechTranscriptionService.swift */,
 				7A6A20000000000000000002 /* PatternsView.swift */,
 				7A6A2000000000000000001F /* PatternsViewModel.swift */,
@@ -395,6 +404,7 @@
 				AA1100000000000000000004 /* SafeHarborViewModelTests.swift in Sources */,
 				AB1100000000000000000004 /* PrivateWhispersViewModelTests.swift in Sources */,
 				AC1100000000000000000001 /* AppLaunchSmokeTests.swift in Sources */,
+				AD1100000000000000000003 /* AppleSpeechTranscriptionServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +441,8 @@
 				7A6A10000000000000000017 /* FollowUpPromptService.swift in Sources */,
 				7A6A1000000000000000001E /* DreamInterpretationService.swift in Sources */,
 				7A6A10000000000000000022 /* PatternSummaryService.swift in Sources */,
+				AD1100000000000000000001 /* SpeechTranscriptionModels.swift in Sources */,
+				AD1100000000000000000002 /* AppleSpeechTranscriptionService.swift in Sources */,
 				7A6A10000000000000000011 /* SpeechTranscriptionService.swift in Sources */,
 				7A6A10000000000000000002 /* PatternsView.swift in Sources */,
 				7A6A1000000000000000001F /* PatternsViewModel.swift in Sources */,
@@ -590,6 +602,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dream Analysis records your voice so you can capture dream details hands-free.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Dream Analysis converts your speech into text so your dream can settle gently onto the page.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -616,6 +630,8 @@
 				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Dream Analysis records your voice so you can capture dream details hands-free.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Dream Analysis converts your speech into text so your dream can settle gently onto the page.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

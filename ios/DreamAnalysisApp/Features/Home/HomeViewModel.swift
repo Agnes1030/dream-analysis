@@ -2,9 +2,7 @@ import Observation
 
 @Observable
 final class HomeViewModel {
-    var isPresentingCapture = false
-
-    func didTapCapture() {
-        isPresentingCapture = true
+    func didTapCapture(using coordinator: RitualFlowCoordinator) {
+        coordinator.startCapture()
     }
 }
